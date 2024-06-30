@@ -1,0 +1,23 @@
+import java.util.Scanner;
+
+public class arthmatichdsg {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        System.out.println("entre your numbers: ");
+        int num1 = input.nextInt();
+
+        System.out.println("enter your second number:");
+        int num2 = input.nextInt();
+
+        System.out.println("now , enter your operation: ");
+        String operation = input.next();
+
+        int saw = switch (operation){
+            case "+ " -> num1+num2;
+            case "- " -> num1-num2;
+            default -> -1;
+
+        };
+        System.out.println("rafs"+saw);
+    }
+}
